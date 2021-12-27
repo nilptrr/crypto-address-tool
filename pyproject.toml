@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "crypto_address_validator"
-version = "0.2.0"
+version = "0.2.1"
 description = "Simple validation tool for Bitcoin and other altcoin addresses."
 authors = ["null-po1nter <me.nullptr@gmail.com>"]
 
