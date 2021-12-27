@@ -2,6 +2,9 @@ import pytest
 from crypto_address_validator.validators import atom_validator as atomv
 
 
+@pytest.mark.valid
+@pytest.mark.address
+@pytest.mark.atom
 @pytest.mark.parametrize(
     'address',
     [
@@ -14,6 +17,9 @@ def test_address_is_valid(address):
     assert atomv.is_valid_address(address)
 
 
+@pytest.mark.invalid
+@pytest.mark.address
+@pytest.mark.atom
 @pytest.mark.parametrize(
     'address',
     [

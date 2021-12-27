@@ -2,6 +2,7 @@ import pytest
 from crypto_address_validator import validate
 
 
+@pytest.mark.symbol
 def symbol_is_valid(symbol: str):
     validators = {
         'btc': ...
@@ -18,6 +19,7 @@ def test_symbol_is_valid():
     assert symbol_is_valid('btc') is None
 
 
+@pytest.mark.symbol
 @pytest.mark.parametrize(
     'symbol',
     [
@@ -39,6 +41,8 @@ def test_symbol_is_invalid(symbol, capfd):
     assert out == f'"{symbol}" currency is not supported.\n'
 
 
+@pytest.mark.valid
+@pytest.mark.address
 @pytest.mark.parametrize(
     'address',
     [
@@ -51,6 +55,8 @@ def test_address_is_valid(address):
     assert validate('btc', address)
 
 
+@pytest.mark.invalid
+@pytest.mark.address
 @pytest.mark.parametrize(
     'address',
     [
