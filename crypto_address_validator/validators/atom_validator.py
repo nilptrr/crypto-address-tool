@@ -8,7 +8,7 @@ def is_valid_address(address: str) -> bool:
         address (str): Currency address to validate.
 
     Returns:
-        bool: Result of btc address validation.
+        bool: Result of address validation.
     """
     # SEE https://docs.cosmos.network/master/spec/addresses/
     return default_validator._bech32_decode(address)

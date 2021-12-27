@@ -41,6 +41,6 @@ def is_valid_address(address: str) -> bool:
         address (str): Currency address to validate.
 
     Returns:
-        bool: Result of btc address validation.
+        bool: Result of address validation.
     """
     return _base58_decode(address) or _bech32_decode(address)
