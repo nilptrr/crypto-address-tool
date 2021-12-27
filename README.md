@@ -2,13 +2,15 @@
 Simple validation tool for Bitcoin and other altcoin addresses.
 
 ## Supported currencies
-| Currency      | Symbol | Mainnet | Testnet |
-|:------------- | ------ | ------- | ------- |
-| Bitcoin       | BTC    | +       | +       |
-| Cosmos        | ATOM   | +       | -       |
-| Binance Coin  | BNB    | +       | +       |
-| Aion          | AION   | +       | +       |
-
+| Currency      | Symbol | Mainnet | Testnet    |
+|:------------- | ------ | ------- | ---------- |
+| Bitcoin       | BTC    | +       | +          |
+| Cosmos        | ATOM   | +       | -          |
+| Binance Coin  | BNB    | +       | +          |
+| Aion          | AION   | +       | +          |
+| EOS           | EOS    | +       | +          |
+| IOST          | IOST   | +       | +          |
+| IOTA          | MIOTA  | +       | Devnet     |
 
 ## Installation
 ```

@@ -2,12 +2,19 @@ from crypto_address_validator.validators import default_validator
 from crypto_address_validator.validators import atom_validator
 from crypto_address_validator.validators import bnb_validator
 from crypto_address_validator.validators import aion_validator
+from crypto_address_validator.validators import eos_validator
+from crypto_address_validator.validators import iost_validator
+from crypto_address_validator.validators import miota_validator
+
 
 validators = {
     'btc': default_validator,
     'atom': atom_validator,
     'bnb': bnb_validator,
-    'aion': aion_validator
+    'aion': aion_validator,
+    'eos': eos_validator,
+    'iost': iost_validator,
+    'miota': miota_validator
 }
 
 
