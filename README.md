@@ -5,6 +5,8 @@ Simple validation tool for Bitcoin and other altcoin addresses.
 | Currency      | Symbol | Mainnet | Testnet |
 |:------------- | ------ | ------- | ------- |
 | Bitcoin       | BTC    | +       | +       |
+| Cosmos        | ATOM   | +       | -       |
+| Binance Coin  | BNB    | +       | +       |
 
 
 ## Installation
