@@ -7,6 +7,7 @@ Simple validation tool for Bitcoin and other altcoin addresses.
 | Bitcoin       | BTC    | +       | +       |
 | Cosmos        | ATOM   | +       | -       |
 | Binance Coin  | BNB    | +       | +       |
+| Aion          | AION   | +       | +       |
 
 
 ## Installation

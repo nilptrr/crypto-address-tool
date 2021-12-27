@@ -1,11 +1,13 @@
 from crypto_address_validator.validators import default_validator
 from crypto_address_validator.validators import atom_validator
 from crypto_address_validator.validators import bnb_validator
+from crypto_address_validator.validators import aion_validator
 
 validators = {
     'btc': default_validator,
     'atom': atom_validator,
-    'bnb': bnb_validator
+    'bnb': bnb_validator,
+    'aion': aion_validator
 }
 
 
