@@ -7,7 +7,6 @@ authors = ["null-po1nter <me.nullptr@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 base58 = "^2.1.1"
-bech32 = "^1.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
