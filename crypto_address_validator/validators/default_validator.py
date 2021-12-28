@@ -1,7 +1,7 @@
 import binascii
 import hashlib
 import base58
-import bech32
+from crypto_address_validator.validators.crypto import bech32m
 
 
 def _base58_decode(address: str) -> bool:
@@ -24,9 +24,9 @@ def _base58_decode(address: str) -> bool:
 
 def _bech32_decode(address: str) -> bool:
     """
-    SEE https://en.bitcoin.it/wiki/BIP_0173
+    SEE https://github.com/bitcoin/bips/blob/1f0b563738199ca60d32b4ba779797fc97d040fe/bip-0350.mediawiki
     """
-    decoded_address = bech32.bech32_decode(address)
+    decoded_address = bech32m.bech32_decode(address)
 
     if None in decoded_address:
         return False
