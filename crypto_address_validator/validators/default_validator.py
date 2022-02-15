@@ -4,6 +4,18 @@ import base58
 from crypto_address_validator.validators.crypto import bech32m
 
 
+def is_valid_address(address: str) -> bool:
+    """
+    Validates the passed btc address.
+    Args:
+        address (str): Currency address to validate.
+
+    Returns:
+        bool: Result of address validation.
+    """
+    return _base58_decode(address) or _bech32_decode(address)
+
+
 def _base58_decode(address: str) -> bool:
     """
     SEE https://en.bitcoin.it/wiki/Base58Check_encoding
@@ -32,15 +44,3 @@ def _bech32_decode(address: str) -> bool:
         return False
 
     return True
-
-
-def is_valid_address(address: str) -> bool:
-    """
-    Validates the passed btc address.
-    Args:
-        address (str): Currency address to validate.
-
-    Returns:
-        bool: Result of address validation.
-    """
-    return _base58_decode(address) or _bech32_decode(address)
