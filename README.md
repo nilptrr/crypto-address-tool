@@ -1,4 +1,9 @@
-# Cryptro address tool
+# Cryptro Address Tool
+
+![cat](logo/logo.png)
+
+---
+
 Simple validation tool for Bitcoin and other altcoin addresses.
 
 ## Supported currencies
@@ -25,4 +30,9 @@ validate('btc', 'bc1q7w9p2unf3hngtzmq3sq47cjdd0xd9sw7us5h6p')
 ```
 
 ## License
+Logo by [Yulia Nikolaeva](https://www.behance.net/yulianikolaeva)
+
+Font: Orbitron by [Matt McInerney](http://matt.cc/)
+
+### Code
 The Unlicense. See the LICENSE file for details.
