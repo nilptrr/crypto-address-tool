@@ -1,4 +1,4 @@
-# Cryptro address validator
+# Cryptro address tool
 Simple validation tool for Bitcoin and other altcoin addresses.
 
 ## Supported currencies
